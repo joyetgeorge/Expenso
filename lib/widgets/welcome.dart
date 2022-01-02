@@ -10,19 +10,19 @@ class Welcome extends StatelessWidget {
       children: [
         Positioned.fill(
             child: Image.asset(
-          './img/Welcome.png',
+          'assets/img/Welcome.png',
           fit: BoxFit.cover,
         )),
         const Center(),
         Container(
-          margin: const EdgeInsets.only(left: 40),
+          margin: const EdgeInsets.only(left: 25),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 margin: const EdgeInsets.only(
-                  top: 600,
+                  top: 450,
                 ),
                 child: Text(
                   'Expenso.',
