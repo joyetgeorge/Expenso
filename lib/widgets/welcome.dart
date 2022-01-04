@@ -6,6 +6,9 @@ class Welcome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    // final Size size = MediaQuery.of(context).size;
+
     return Stack(
       children: [
         Positioned.fill(
@@ -51,10 +54,10 @@ class Welcome extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    fixedSize: const Size(199, 50),
-                    primary: const Color(0xffC65466),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18))
-                  ),
+                      fixedSize: const Size(199, 50),
+                      primary: const Color(0xffC65466),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18))),
                   child: Row(
                     // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

@@ -12,16 +12,21 @@ void main() {
   ));
 }
 
-class Expenso extends StatelessWidget {
+class Expenso extends StatefulWidget {
   const Expenso({Key? key}) : super(key: key);
 
+  @override
+  State<Expenso> createState() => _ExpensoState();
+}
+
+class _ExpensoState extends State<Expenso> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-            backgroundColor: const Color(0xfffffffff),
+            backgroundColor: const Color(0x000fffff),
             elevation: 0,
             title: Container(
               margin: const EdgeInsets.only(left: 10, right: 10, top: 10),
